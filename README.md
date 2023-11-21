@@ -9,4 +9,4 @@ A Windows ffmpeg script aiming get the best quality transcoding to standard mp4 
 
 ## Using
 Just drag the video file to the script and that's it.\
-You can create a shorcut on your desktop or create an option in Windows menu to access everywhere. ![Menu screenshot](https://raw.githubusercontent.com/arthurmv/MP4maker/main/img/menu.png "Menu screenshot")
+You can create a shorcut on your desktop or [create an option in Windows menu](https://www.sordum.org/7615/easy-context-menu-v1-6/) to access everywhere. ![Menu screenshot](https://raw.githubusercontent.com/arthurmv/MP4maker/main/img/menu.png "Menu screenshot")
