@@ -2,6 +2,7 @@
 TITLE MP4maker
 CD /D %~dp1
 REM CHECK AUDIO
+SET AUDIO=X
 >_tmp (mediainfo --Output="Audio;%%Format%%" "%~nx1")
 SET /P AUDIO=<_tmp
 DEL _tmp
@@ -14,6 +15,7 @@ SET /A ABB=%ABBB%/1000
 SET "AB=-b:a %ABB%k"
 IF %ABB% GEQ 320 SET "AB=-b:a 320k"
 : CHECK-VIDEO
+SET VIDEO=X
 >_tmp (mediainfo --Inform="Video;%%ScanType%%" "%~nx1")
 SET /P VIDEO=<_tmp
 DEL _tmp
