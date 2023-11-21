@@ -5,7 +5,7 @@ A Windows ffmpeg script aiming to get balanced best quality transcoding to stand
 ## Requirements
 * [ffmpeg](https://ffmpeg.org/download.html#build-windows) in PATH
 * [MediaInfo CLI](https://mediaarea.net/en/MediaInfo/Download/Windows) in PATH
-* [Python](https://www.python.org/downloads/windows/) ([miniCONDA](https://docs.conda.io/projects/miniconda/en/latest/index.html) recommended) and ffpb (`pip install ffpb`).
+* [Node.JS](https://nodejs.org/en/download) and [ffmpeg-progressbar-cli](https://github.com/sidneys/ffmpeg-progressbar-cli) (`npm install --global ffmpeg-progressbar-cli`).
 
 ## Usage
 Just drag the video file on and that's it. It detects interlaced video and process using [bwdif](https://ffmpeg.org/ffmpeg-filters.html#bwdif-1), making some fast motions in certain videos and leaving progressive video as is.\
