@@ -18,10 +18,10 @@ SET /P VIDEO=<_tmp
 DEL _tmp
 IF %VIDEO%==Interlaced GOTO INTERLACED
 : TRANSCODE
-ffpb -i "%~nx1" -vcodec h264 -preset veryslow -crf 12 -tune film -acodec aac %AB% -scodec mov_text "%~n1.mp4"
+ffpb -i "%~nx1" -vcodec h264 -preset veryslow -crf 12 -tune film -acodec aac %AB% -scodec mov_text "%~n1.mp4" & TITLE MP4maker
 GOTO FINISH
 : INTERLACED
-ffpb -i "%~nx1" -vcodec h264 -preset veryslow -crf 12 -tune film -filter:v bwdif=mode=send_field:parity=auto:deint=all -acodec aac %AB% -scodec mov_text "%~n1.mp4" & TITLE MP4maker
+ffpb -i "%~nx1" -vcodec h264 -preset veryslow -crf 12 -tune film -filter:v bwdif=mode=send_field:parity=auto:deint=all -acodec aac %AB% -scodec mov_text "%~n1.mp4"
 : FINISH
 PAUSE
 EXIT
