@@ -1,5 +1,5 @@
 # MP4maker
-A Windows ffmpeg script aiming get the best quality transcoding to standard mp4 video file with ease.
+A Windows ffmpeg script aiming to get balanced best quality transcoding to standard mp4 video file with ease.
 
 ![MP4maker screenshot](https://raw.githubusercontent.com/arthurmv/MP4maker/main/img/screenshot.png "MP4maker screenshot")
 ## Requirements
