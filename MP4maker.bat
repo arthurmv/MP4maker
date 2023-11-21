@@ -6,6 +6,7 @@ REM CHECK AUDIO
 SET /P AUDIO=<_tmp
 DEL _tmp
 IF %AUDIO%==AAC SET "AB=-c:a copy" & GOTO CHECK-VIDEO
+IF %AUDIO%==FLAC SET "AB=-c:a copy" & GOTO CHECK-VIDEO
 >_tmp (mediainfo --Output="Audio;%%BitRate%%" "%~nx1")
 SET /P ABBB=<_tmp
 DEL _tmp
